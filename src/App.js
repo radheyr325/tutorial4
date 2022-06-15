@@ -11,7 +11,6 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={< SignIn/>}></Route>
-            {/*<Route path="/users" element={< Users/>}></Route>*/}
               <Route path ="users">
                   <Route path={":id"} element={<Profile />}  />
                   <Route index element = {<Users></Users>}></Route>
